@@ -1,6 +1,16 @@
 ﻿
 using System.Reflection.Metadata;
 
+/*                                                                                 
+  ┌─────────────────────────────────────────────┐     ┌─────────────────────────┐ 
+  │ Jahresstatistik                             │     │ Monatsverbrauch         │ 
+  ├─────────────────────────────────────────────┤     ├─────────────────────────┤ 
+  │ + minVerbrauch : int                        │     │ + VerbraucherNr : int   │ 
+  │ + maxVerbrauch : int                        │     │ + MonatsNr : int        │ 
+  │ + limitVerbraucher : List<Monatsverbrauch>  │     │ + Verbrauch : int       │ 
+  └─────────────────────────────────────────────┘     └─────────────────────────┘ 
+ */                                                                                
+
 namespace Ap2Aufgabe2022A1
 {
     internal class Program
@@ -31,6 +41,7 @@ namespace Ap2Aufgabe2022A1
         }
 
         // die eigentliche aufgabe => die methode "statistik" zu schreiben:
+        //°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
         private static Jahresstatistik statistik(int[][] verbrauch, int limit)
         {
             int min = int.MaxValue;
